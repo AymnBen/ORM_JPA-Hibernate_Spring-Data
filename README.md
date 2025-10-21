@@ -104,10 +104,10 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect <br
 
 <h2>🧠 Bilan du projet</h2>
 Ce projet a permis de :
-- Comprendre le fonctionnement de Spring Boot et Spring Data JPA,
-- Manipuler une base de données H2 en mémoire pour les tests,
-- Effectuer les opérations CRUD sur une entité,
-- Apprendre à migrer vers une base MySQL réelle.
+- Comprendre le fonctionnement de Spring Boot et Spring Data JPA, <br>
+- Manipuler une base de données H2 en mémoire pour les tests, <br>
+- Effectuer les opérations CRUD sur une entité, <br>
+- Apprendre à migrer vers une base MySQL réelle. <br>
 
 Le projet illustre les bases du développement d’une application Spring Boot orientée données. 
 
