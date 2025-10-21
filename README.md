@@ -31,24 +31,24 @@ L’entité `Product` représente un produit avec les attributs suivants : <br>
 - `quantity` : quantité disponible (type `int`)
 
 <h2>### 3. Configuration de la base de données H2</h2>
-- La configuration a été faite dans le fichier application.properties :
+- La configuration a été faite dans le fichier application.properties :  <br>
 
-spring.datasource.url=jdbc:h2:mem:product-db
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.h2.console.enabled=true
-spring.jpa.hibernate.ddl-auto=create
+spring.datasource.url=jdbc:h2:mem:product-db <br>
+spring.datasource.driverClassName=org.h2.Driver <br>
+spring.datasource.username=sa <br>
+spring.datasource.password= <br>
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect <br>
+spring.h2.console.enabled=true <br>
+spring.jpa.hibernate.ddl-auto=create <br>
 
 - Cela permet de créer une base de données temporaire en mémoire pour tester l’application sans installation.
 
 <h2>### 4. Création du dépôt JPA (ProductRepository)</h2>
 - L’interface ProductRepository hérite de JpaRepository et permet d’effectuer les opérations CRUD de base.
-- Des méthodes de recherche personnalisées ont été ajoutées :
-  public interface ProductRepository extends JpaRepository<Product, Long> {
-      List<Product> findByNameContains(String name);
-      List<Product> findByPriceGreaterThan(double price);
+- Des méthodes de recherche personnalisées ont été ajoutées : 
+  public interface ProductRepository extends JpaRepository<Product, Long> {  <br>
+      List<Product> findByNameContains(String name); <br>
+      List<Product> findByPriceGreaterThan(double price); <br>
   }
 
 <h2>### 5. Test des fonctionnalités dans la classe principale</h2>
@@ -90,12 +90,12 @@ spring.jpa.hibernate.ddl-auto=create
 ➤ Modifier la configuration application.properties
 
 
-spring.application.name=students-app
-server.port=8080
-spring.datasource.url=jdbc:mysql://localhost:3306/product-db?createDatabaseIfNotExist=true
-spring.datasource.username=root
-spring.datasource.password=
-spring.jpa.hibernate.ddl-auto=update
+spring.application.name=students-app <br>
+server.port=8080 <br>
+spring.datasource.url=jdbc:mysql://localhost:3306/product-db?createDatabaseIfNotExist=true <br>
+spring.datasource.username=root <br>
+spring.datasource.password= <br>
+spring.jpa.hibernate.ddl-auto=update <br>
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect <br> <br>
 <img width="547" height="295" alt="image" src="https://github.com/user-attachments/assets/39fadd03-558d-4527-ba1b-ea6dd9d817f8" /> <br><br>
 
