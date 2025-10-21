@@ -24,10 +24,10 @@ Ces dépendances permettent :
 ---
 
 <h2>### 2. Création de l’entité JPA `Product`</h2>
-L’entité `Product` représente un produit avec les attributs suivants :
-- `id` : identifiant unique (type `Long`)
-- `name` : nom du produit (type `String`)
-- `price` : prix du produit (type `double`)
+L’entité `Product` représente un produit avec les attributs suivants : <br>
+- `id` : identifiant unique (type `Long`) <br>
+- `name` : nom du produit (type `String`) <br>
+- `price` : prix du produit (type `double`) <br>
 - `quantity` : quantité disponible (type `int`)
 
 <h2>### 3. Configuration de la base de données H2</h2>
