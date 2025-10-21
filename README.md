@@ -53,6 +53,7 @@ spring.jpa.hibernate.ddl-auto=create
 
 <h2>### 5. Test des fonctionnalités dans la classe principale</h2>
 - Les différentes opérations (ajout, affichage, mise à jour, suppression) ont été testées dans la méthode run() de la classe StudentAppApplication.
+    
      @Override
     public void run(String... args) throws Exception {
         productRepository.save(new Product(null, "Computer", 4000, 4));
@@ -79,13 +80,16 @@ spring.jpa.hibernate.ddl-auto=create
 
 <h2>### 6. Migration vers MySQL</h2>
 ➤ Ajouter la dépendance MySQL dans pom.xml
+<p>
 <dependency>
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
     <scope>runtime</scope>
-</dependency>
+</dependency></p>
 
 ➤ Modifier la configuration application.properties
+
+
 spring.application.name=students-app
 server.port=8080
 spring.datasource.url=jdbc:mysql://localhost:3306/product-db?createDatabaseIfNotExist=true
