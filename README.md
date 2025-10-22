@@ -92,18 +92,19 @@ spring.jpa.hibernate.ddl-auto=create <br>
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
     <scope>runtime</scope>
-</dependency></p>
-
+</dependency>
+```
+```bash
 ➤ Modifier la configuration application.properties
 
 
-spring.application.name=students-app <br>
-server.port=8080 <br>
-spring.datasource.url=jdbc:mysql://localhost:3306/product-db?createDatabaseIfNotExist=true <br>
-spring.datasource.username=root <br>
-spring.datasource.password= <br>
-spring.jpa.hibernate.ddl-auto=update <br>
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect <br> <br>
+spring.application.name=students-app 
+server.port=8080 <
+spring.datasource.url=jdbc:mysql://localhost:3306/product-db?createDatabaseIfNotExist=true 
+spring.datasource.username=root 
+spring.datasource.password= 
+spring.jpa.hibernate.ddl-auto=update 
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect 
 ```
 <img width="547" height="295" alt="image" src="https://github.com/user-attachments/assets/39fadd03-558d-4527-ba1b-ea6dd9d817f8" /> <br><br>
 
